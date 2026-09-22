@@ -42,6 +42,9 @@ function App() {
       case "deadline":
           form.deadline = event.target.value;
           break;
+      case "priority":
+          form.priority = event.target.value;
+          break;
       default:
           form = formState;
     }
@@ -71,6 +74,7 @@ function App() {
           deadline={task.deadline}
           key={task.id}
           done={task.done}
+          priority={task.priority}
           markDone={() => doneHandler(index)}
           deleteTask = {() => deleteHandler(index)}
         />
