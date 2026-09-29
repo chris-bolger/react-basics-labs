@@ -95,7 +95,8 @@ function App() {
             container
             spacing={5}
             sx={{
-              justifyContent: "center"
+              justifyContent: "center",
+              gap: 2
             }}
           >
           {taskState.tasks.map((task, index) => (

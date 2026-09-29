@@ -6,6 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+import { shadows } from '@mui/system';
+
 
 const Task = (props) => {
     
@@ -17,14 +19,17 @@ const Task = (props) => {
             <Card
                 sx={{
                 backgroundColor: props.done ? 'lightgrey' : 'lightblue',
-                padding: '20px'
+                padding: '20px',
+                borderRadius: '20px',
+                boxShadow: 3
                 }}
             >
             <CardHeader
             title={props.title}
             sx={{
                 backgroundColor: 'white',
-                borderRadius: '3px',
+                border: '2px solid lightgrey',
+                borderRadius: '15px',
                 padding: '20px',
                 textAlign: 'center'
             }}
@@ -69,6 +74,12 @@ const Task = (props) => {
                     size="small"
                     color="success"
                     onClick={props.markDone}
+                    sx={{
+                        backgroundColor: props.done ? 'darkgreen' : 'green',
+                        '&:hover': {
+                            backgroundColor: props.done ? 'green' : 'darkgreen'
+                        }
+                    }}
                 >
                     Done
                 </Button>
