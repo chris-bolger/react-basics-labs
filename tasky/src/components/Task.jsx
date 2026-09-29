@@ -17,7 +17,8 @@ const Task = (props) => {
     return (
         <Grid
         key={props.id}
-        size={{ xs: 12, md: 4 }}
+        spacing={{xs: 1}}
+        size={{ xs: 8, md: 5, lg: 4 }}
         >
             <Card
                 sx={{
