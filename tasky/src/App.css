@@ -14,15 +14,15 @@ h1 {
   border-radius: 4px;
 }
 
-div {
+/* div {
   padding: 20px;
 }
 
 .container{
   text-align: center;
-}
+} */
 
-.card {
+/* .card {
   display: inline-block;
   vertical-align: top;
   font-family: system-ui;
@@ -68,13 +68,13 @@ button {
   bottom: 5px;
   right: 5px;
   color: red;
-}
+} */
 
 .priority {
   border-radius: 4px;
 }
 
-input[type=text], input[type=date], select {
+/* input[type=text], input[type=date], select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -103,5 +103,5 @@ form {
   text-align: left;
   width: 50%;
   margin: auto;
-}
+} */
 
