@@ -9,6 +9,8 @@ import Typography from '@mui/material/Typography';
 import { shadows } from '@mui/system';
 import DeleteIcon from '@mui/icons-material/Delete';
 import DoneIcon from '@mui/icons-material/Done';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import { Chip } from '@mui/material';
 
 const Task = (props) => {
     
@@ -25,6 +27,16 @@ const Task = (props) => {
                 boxShadow: 3
                 }}
             >
+            <Chip 
+                sx={{
+                    backgroundColor: props.priority === 'High' ? 'red' : props.priority === 'Medium' ? 'orange' : 'green',
+                    justifyContent: 'center',
+                    marginBottom: '10px',
+                    color: 'white',
+                    fontWeight: 'bold'
+                }}
+                icon={<AccessTimeIcon sx={{ color: 'white' }} />} label={`Priority: ${props.priority}`} 
+            />
             <CardHeader
             title={props.title}
             sx={{
@@ -35,7 +47,6 @@ const Task = (props) => {
                 textAlign: 'center'
             }}
             />
-
             <CardContent>
                 <Box
                     sx={{

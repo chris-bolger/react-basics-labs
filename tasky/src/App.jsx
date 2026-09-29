@@ -106,6 +106,7 @@ function App() {
               deadline={task.deadline}
               done={task.done}
               key={task.id}
+              priority={task.priority}
               markDone={() => doneHandler(index)}
               deleteTask={() => deleteHandler(index)}
             />
